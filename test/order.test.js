@@ -12,6 +12,7 @@ chai.use(chaiHttp);
 
 describe("florashop User API TEST", () => {
   // test the order route
+  // test the order route 
 
   describe("POST /api/orders", () => {
     it("It should get orders", (done) => {
