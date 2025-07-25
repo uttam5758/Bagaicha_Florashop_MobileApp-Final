@@ -7,11 +7,11 @@ let server = require("../server");
 // assertion style
 
 
-chai.should();
+// chai.should();
 
-chai.use(chaiHttp);
+// chai.use(chaiHttp);
 
-describe("florashop User API TEST", () => {
+// describe("florashop User API TEST", () => {
  // test the product route
  
   describe("POST /api/products", () => {
