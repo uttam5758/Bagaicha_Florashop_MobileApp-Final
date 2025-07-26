@@ -36,25 +36,25 @@ describe("florashop User API TEST", () => {
   });
 });
 
-// describe("florashop User API TEST", () => {
-//   // test the logout route
+describe("florashop User API TEST", () => {
+  // test the logout route
 
-//   describe("GET /api/logout", () => {
-//     it("It should logout a user", (done) => {
-//       chai
+  describe("GET /api/logout", () => {
+    it("It should logout a user", (done) => {
+      chai
 
-//         .request(server)
+        .request(server)
 
-//         .get("/api/v2/logout")
+        .get("/api/v2/logout")
 
-//         .end((err, res) => {
-//           res.should.have.status(200);
+        .end((err, res) => {
+          res.should.have.status(200);
 
-//           done();
-//         });
-//     });
-//   });
-// });
+          done();
+        });
+    });
+  });
+});
 
 describe("florashop User API TEST", () => {
   // test the userdetails route
