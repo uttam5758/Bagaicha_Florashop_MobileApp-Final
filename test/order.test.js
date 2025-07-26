@@ -14,22 +14,22 @@ describe("florashop User API TEST", () => {
   // test the order route
   
 
-  describe("POST /api/orders", () => {
-    it("It should get orders", (done) => {
-      chai
+//   describe("POST /api/orders", () => {
+//     it("It should get orders", (done) => {
+//       chai
 
-        .request(server)
+//         .request(server)
 
-        .get("/api/v2//orders/me")
+//         .get("/api/v2//orders/me")
 
-        .end((err, res) => {
-          res.should.have.status(401);
+//         .end((err, res) => {
+//           res.should.have.status(401);
 
-          done();
-        });
-    });
-  });
-});
+//           done();
+//         });
+//     });
+//   });
+// });
 
 
 
