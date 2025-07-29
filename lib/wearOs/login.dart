@@ -70,17 +70,17 @@ class _WearOsLoginState extends State<WearOsLogin> {
                       ),
                       SizedBox(
                         height: 40,
-                        // child: TextFormField(
-                        //   controller: password,
-                        //   decoration: const InputDecoration(
-                        //     border: OutlineInputBorder(),
-                        //     hintText: 'Password',
-                        //     hintStyle: TextStyle(fontSize: 10),
-                        //     labelText: ' Password',
-                        //     labelStyle: TextStyle(fontSize: 10),
-                        //   ),
-                        //   style: TextStyle(fontSize: 10),
-                        // ),
+                        child: TextFormField(
+                          controller: password,
+                          decoration: const InputDecoration(
+                            border: OutlineInputBorder(),
+                            hintText: 'Password',
+                            hintStyle: TextStyle(fontSize: 10),
+                            labelText: ' Password',
+                            labelStyle: TextStyle(fontSize: 10),
+                          ),
+                          style: TextStyle(fontSize: 10),
+                        ),
                       ),
                       SizedBox(
                         width: double.infinity,
