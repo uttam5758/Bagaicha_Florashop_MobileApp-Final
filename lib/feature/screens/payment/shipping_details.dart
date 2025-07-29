@@ -7,9 +7,9 @@ class ShippngScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var address = TextEditingController();
     var phone = TextEditingController();
-    var country=TextEditingController();
-    var state=TextEditingController();
-    var zipcode=TextEditingController();
+    var country = TextEditingController();
+    var state = TextEditingController();
+    var zipcode = TextEditingController();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Shipping Details'),
@@ -32,9 +32,8 @@ class ShippngScreen extends StatelessWidget {
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    ),
                   ),
-      
+                ),
                 const SizedBox(height: 20),
                 TextFormField(
                   controller: phone,
@@ -55,20 +54,19 @@ class ShippngScreen extends StatelessWidget {
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    ),
                   ),
+                ),
                 const SizedBox(height: 20),
                 TextFormField(
-                      controller: state,
+                  controller: state,
                   decoration: InputDecoration(
-                
                     labelText: 'State',
                     // hintText: 'Bagmati',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    ),
                   ),
+                ),
                 const SizedBox(height: 20),
                 TextFormField(
                   controller: zipcode,
@@ -78,22 +76,18 @@ class ShippngScreen extends StatelessWidget {
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    ),
                   ),
+                ),
                 const SizedBox(height: 20),
-                
-               
-                
-                // ElevatedButton(
-                //   onPressed: () {
-                //     Navigator.pushNamed(context, '/confirm_order',arguments: {
-                //       'address': address.text,
-                //       'phone': phone.text,
-                //       'country': country.text,
-                //       'state': state.text,
-                //       'zip': zipcode.text,
-                //     });
-                  
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/confirm_order', arguments: {
+                      'address': address.text,
+                      'phone': phone.text,
+                      'country': country.text,
+                      'state': state.text,
+                      'zip': zipcode.text,
+                    });
                   },
                   style: ElevatedButton.styleFrom(
                     // backgroundColor: const Color.fromARGB(255, 14, 234, 117),
@@ -111,7 +105,6 @@ class ShippngScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-      
               ],
             ),
           ),
