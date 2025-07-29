@@ -84,15 +84,15 @@ class ShippngScreen extends StatelessWidget {
                 
                
                 
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/confirm_order',arguments: {
-                      'address': address.text,
-                      'phone': phone.text,
-                      'country': country.text,
-                      'state': state.text,
-                      'zip': zipcode.text,
-                    });
+                // ElevatedButton(
+                //   onPressed: () {
+                //     Navigator.pushNamed(context, '/confirm_order',arguments: {
+                //       'address': address.text,
+                //       'phone': phone.text,
+                //       'country': country.text,
+                //       'state': state.text,
+                //       'zip': zipcode.text,
+                //     });
                   
                   },
                   style: ElevatedButton.styleFrom(
