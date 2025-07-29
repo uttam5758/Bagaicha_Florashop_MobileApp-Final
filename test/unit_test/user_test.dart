@@ -44,9 +44,9 @@ void main() {
 
     test("user register test", () async {
       bool expectedResult = true;
-      String name = " ";
-      String email = "";
-      String password = "";
+      String name = "rajju ";
+      String email = "rajju@gmail.com";
+      String password = "rajju12345";
       User user = User(name: name, email: email, password: password);
       bool actual = await UserRepository().registerUser(user);
       expect(actual, expectedResult);
