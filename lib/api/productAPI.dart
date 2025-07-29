@@ -15,13 +15,13 @@ class ProductAPI {
     ProductResponse? productResponse;
     Response response;
 
-    try {
-      var dio = Dio();
-      // dio.interceptors.add(DioCacheManager(CacheConfig(baseUrl: "http://www.localhost:5000")).interceptor);
-      var url = baseUrl + getProductsUrl;
-      response = await dio.get(url, queryParameters: {'keyword': search}
-      // ,options: buildCacheOptions(Duration(days: 7))
-      );
+    // try {
+    //   var dio = Dio();
+    //   // dio.interceptors.add(DioCacheManager(CacheConfig(baseUrl: "http://www.localhost:5000")).interceptor);
+    //   var url = baseUrl + getProductsUrl;
+    //   response = await dio.get(url, queryParameters: {'keyword': search}
+    //   // ,options: buildCacheOptions(Duration(days: 7))
+    //   );
 
       if (response.statusCode == 200) {
         productResponse = ProductResponse.fromJson(response.data);
