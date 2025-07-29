@@ -176,14 +176,14 @@ class CartItem extends StatelessWidget {
                 ),
                 SizedBox(height: 8.0),
                 Row(
-                  // children: <Widget>[
-                  //   Container(
-                  //     width: 20.0,
-                  //     height: 20.0,
-                  //     decoration: BoxDecoration(
-                  //       color: Colors.grey[300],
-                  //       borderRadius: BorderRadius.circular(4.0),
-                  //     ),
+                  children: <Widget>[
+                    Container(
+                      width: 20.0,
+                      height: 20.0,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(4.0),
+                      ),
                       child: Icon(
                         Icons.add,
                         color: Colors.white,
