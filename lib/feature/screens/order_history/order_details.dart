@@ -11,14 +11,14 @@ class OrderDetails extends StatefulWidget {
 
 class _OrderDetailsState extends State<OrderDetails> {
   @override
-  Widget build(BuildContext context) {
-    final args = ModalRoute.of(context)!.settings.arguments as Map;
-    final order = args['orderItem'];
-    // use for loop to get all order items
-    List<Widget> lstOrderItems = [];
-    for (var i = 0; i < order.length; i++) {
-      print(order[i].name);
-    }
+  // Widget build(BuildContext context) {
+  //   final args = ModalRoute.of(context)!.settings.arguments as Map;
+  //   final order = args['orderItem'];
+  //   // use for loop to get all order items
+  //   List<Widget> lstOrderItems = [];
+  //   for (var i = 0; i < order.length; i++) {
+  //     print(order[i].name);
+  //   }
     // print orderlist
     return Scaffold(
         appBar: AppBar(
