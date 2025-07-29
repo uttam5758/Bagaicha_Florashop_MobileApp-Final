@@ -21,14 +21,14 @@ void main() {
       await tester.enterText(email, "makai@gmail.com");
       Finder password = find.byKey(const ValueKey("txtPassword"));
       await tester.enterText(password, "baba1412914@");
-      // Finder confirmPassword = find.byKey(const ValueKey("txtConfirmPassword"));
-      // await tester.enterText(password, "baba1412914@");
-      // Finder signup = find.byKey(const ValueKey("btnRegister"));
-      // await tester.dragUntilVisible(
-      //   signup,
-      //   find.byType(Scaffold),
-      //   const Offset(0, 70),
-      // );
+      Finder confirmPassword = find.byKey(const ValueKey("txtConfirmPassword"));
+      await tester.enterText(password, "baba1412914@");
+      Finder signup = find.byKey(const ValueKey("btnRegister"));
+      await tester.dragUntilVisible(
+        signup,
+        find.byType(Scaffold),
+        const Offset(0, 70),
+      );
       await tester.tap(signup);
       await tester.pumpAndSettle();
       expect(find.byType(Scaffold), findsOneWidget);
