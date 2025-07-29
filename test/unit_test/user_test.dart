@@ -7,10 +7,10 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   UserRepository? userRepository;
-  // group("test user register and login", () {
-  //   setUp(() {
-  //     userRepository = UserRepository();
-  //   });
+  group("test user register and login", () {
+    setUp(() {
+      userRepository = UserRepository();
+    });
     test("user login test", () async {
       bool expectedResult = true;
       String email = "rohan@gmail.com";
@@ -44,9 +44,9 @@ void main() {
 
     test("user register test", () async {
       bool expectedResult = true;
-      String name = "kripathapaaaa ";
-      String email = "kripaathapaaa@gmail.com";
-      String password = "kripa12345676";
+      String name = " ";
+      String email = "";
+      String password = "";
       User user = User(name: name, email: email, password: password);
       bool actual = await UserRepository().registerUser(user);
       expect(actual, expectedResult);
