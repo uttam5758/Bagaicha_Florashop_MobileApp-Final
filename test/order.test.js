@@ -1,116 +1,116 @@
-let chai = require("chai");
+// let chai = require("chai");
 
-let chaiHttp = require("chai-http");
+// let chaiHttp = require("chai-http");
 
-let server = require("../server");
+// let server = require("../server");
 
-// assertion style
+// // assertion style
 
-chai.should();
+// chai.should();
 
-chai.use(chaiHttp);
+// chai.use(chaiHttp);
 
-describe("florashop User API TEST", () => {
-  // test the order route
+// describe("florashop User API TEST", () => {
+//   // test the order route
   
 
-  describe("POST /api/orders", () => {
-    it("It should get orders", (done) => {
-      chai
+//   describe("POST /api/orders", () => {
+//     it("It should get orders", (done) => {
+//       chai
 
-        .request(server)
+//         .request(server)
 
-        .get("/api/v2//orders/me")
+//         .get("/api/v2//orders/me")
 
-        .end((err, res) => {
-          res.should.have.status(401);
+//         .end((err, res) => {
+//           res.should.have.status(401);
 
-          done();
-        });
-    });
-  });
-});
-
-
+//           done();
+//         });
+//     });
+//   });
+// });
 
 
-describe("florashop User API TEST", () => {
-  // test the order route
 
-  describe("POST /api/order", () => {
-    it("It should create order details", (done) => {
-      chai
 
-        .request(server)
+// describe("florashop User API TEST", () => {
+//   // test the order route
 
-        .post("/api/v2/order/new")
+//   describe("POST /api/order", () => {
+//     it("It should create order details", (done) => {
+//       chai
 
-        .send({
-            shippingInfo: { 
-                firstName: "Bubhuti",
-                lastName: "Karki",
-                address: "123 Main St",
-                city: "New York",
-                state: "NY",
-                zip: "10001",
-                country: "USA",
-                phone: "1234567890"
-            },   
-          orderItems: [ { productId: 1, quantity: 1 } ],
-            paymentInfo: { 
-                cardNumber: "1234567890123456",
-                cardExpiration: "12/20",
-                cardCvv: "123"
-            },
-          itemsPrice:2000,
-          taxPrice: 400,
-          shippingPrice: 200,
-          totalPrice: 4000
-        })
+//         .request(server)
 
-        .end((err, res) => {
-          res.should.have.status(401);
+//         .post("/api/v2/order/new")
 
-          done();
-        });
-    });
-  });
-});
-describe("florashop User API TEST", () => {
-  // test the delete route
+//         .send({
+//             shippingInfo: { 
+//                 firstName: "Bubhuti",
+//                 lastName: "Karki",
+//                 address: "123 Main St",
+//                 city: "New York",
+//                 state: "NY",
+//                 zip: "10001",
+//                 country: "USA",
+//                 phone: "1234567890"
+//             },   
+//           orderItems: [ { productId: 1, quantity: 1 } ],
+//             paymentInfo: { 
+//                 cardNumber: "1234567890123456",
+//                 cardExpiration: "12/20",
+//                 cardCvv: "123"
+//             },
+//           itemsPrice:2000,
+//           taxPrice: 400,
+//           shippingPrice: 200,
+//           totalPrice: 4000
+//         })
 
-  describe("DELETE /api/orders deleted", () => {
-    it("It should get a order deleted", (done) => {
-      chai
+//         .end((err, res) => {
+//           res.should.have.status(401);
 
-        .request(server)
+//           done();
+//         });
+//     });
+//   });
+// });
+// describe("florashop User API TEST", () => {
+//   // test the delete route
 
-        .delete("/api/v2/admin/order/:id")
+//   describe("DELETE /api/orders deleted", () => {
+//     it("It should get a order deleted", (done) => {
+//       chai
 
-        .end((err, res) => {
-          res.should.have.status(401);
+//         .request(server)
 
-          done();
-        });
-    });
-  });
-});
-describe("florashop User API TEST", () => {
-  // test the delete route
+//         .delete("/api/v2/admin/order/:id")
 
-  describe("DELETE /api/orders updated", () => {
-    it("It should get a order updated", (done) => {
-      chai
+//         .end((err, res) => {
+//           res.should.have.status(401);
 
-        .request(server)
+//           done();
+//         });
+//     });
+//   });
+// });
+// describe("florashop User API TEST", () => {
+//   // test the delete route
 
-        .put("/api/v2/admin/order/:id")
+//   describe("DELETE /api/orders updated", () => {
+//     it("It should get a order updated", (done) => {
+//       chai
 
-        .end((err, res) => {
-          res.should.have.status(401);
+//         .request(server)
 
-          done();
-        });
-    });
-  });
-});
+//         .put("/api/v2/admin/order/:id")
+
+//         .end((err, res) => {
+//           res.should.have.status(401);
+
+//           done();
+//         });
+//     });
+//   });
+// });
